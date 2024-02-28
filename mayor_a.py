@@ -1,3 +1,4 @@
+import sys
 ventas = {
  "Enero": 15000,
  "Febrero": 22000,
@@ -13,7 +14,8 @@ ventas = {
  "Diciembre": 21000,
 }
 
-umbral = int(input("Ingrese el valor del umbral = "))
+umbral = int(sys.argv[1])
+             
 
 ventasUmbral={key:value for key,value in ventas.items() if value>umbral}
 
